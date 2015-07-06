@@ -29,3 +29,5 @@ But on ubuntu, I see :
      TOTAL    (pct)     SAMPLES    (pct)     FRAME
          5  (83.3%)           5  (83.3%)     block in Object#find_many_square_roots
 ```
+
+In OSX it detects the sleep operation as the most expensive one when using wall time, which is correct. But on linux, somehow many samples are lost (see miss rate) , and the sleep is not detected as the most expensive one.
